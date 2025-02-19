@@ -43,7 +43,8 @@ const Chat = () => {
             padding: "1rem",
             height: "300px",
             border: "1px solid",
-            marginBottom:"1rem"
+            marginBottom:"1rem",
+            overflowY: "scroll"
         }}>
             {
                 messages?.map((message, index) => (
@@ -51,6 +52,7 @@ const Chat = () => {
                         width: "50%",
                         padding: "1rem",
                         borderRadius: "5px",
+                        wordBreak: "break-word",
                         color: 'white'
                     }}>{message}</p>
                 ))
